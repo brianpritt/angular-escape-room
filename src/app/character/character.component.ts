@@ -22,6 +22,6 @@ export class CharacterComponent implements OnInit {
   }
   setCharacter(character){
     this.userProfile[0].character = character;
-    this.router.navigate(['ohayocon', this.userProfile[0].character]);
+    this.router.navigate(['ohayocon', this.userProfile[0].character, '1']);
   }
 }

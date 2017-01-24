@@ -20,7 +20,7 @@ const appRoutes: Routes = [
     component: OhayoconComponent
   },
   {
-    path: 'ohayocon/:character',
+    path: 'ohayocon/:character/1',
     component: Ohayocon1Component
   },
 ];

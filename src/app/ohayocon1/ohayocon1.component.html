@@ -1,3 +1,11 @@
+
+<div class="" *ngIf='userProfile[0].character == "student"'>
 <p>
-  ohayocon1 works!
+  Hello {{userProfile[0].name}}, as a {{userProfile[0].character}} of Japanese language and culture you've found yourself...
 </p>
+</div>
+<div class="" *ngIf='userProfile[0].character == "fan"'>
+<p>
+  Hello {{userProfile[0].name}}, as a {{userProfile[0].character}} of Firefly you've found yourself...
+</p>
+</div>
