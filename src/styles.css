@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.module-container {
+  display: flex;
+}
+.module {
+  background: lightgrey;
+  width: 49%;
+  margin: 1%;
+}
+.module.clicked {
+  box-shadow: 0px 0px 10px 2px black;
+}

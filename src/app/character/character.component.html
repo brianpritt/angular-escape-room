@@ -1,0 +1,24 @@
+<div class="" *ngIf='userProfile[0].ohayocon'>
+  <h1 id="name" (keyup)="updateName()" contenteditable="true">{{userProfile[0].name}}</h1>
+  <div class="module-container">
+    <div class="module" (click)='setCharacter("student")' routerLink='ohayocon1'>
+      <h4>Japanese language student</h4>
+      <p>
+        As a Japanese language student, you are required to do extraciricular activities as a part of your cultural learning experience.  With only a week left in the semester, you panic and sign up for Ohayocon, Ohio's largest Japanese animation conference.
+      </p>
+    </div>
+    <div class="module" (click)='setCharacter("fan")'routerLink='ohayocon1'>
+      <h4>Firefly Fan</h4>
+      <p>
+        You've recently fallen in love with the TV series Firefly.  You sign up for Ohayocon, mistakenly thinking that there will be other people that have this same appreciation there. Little did you know, this conference is for Anime only.
+      </p>
+    </div>
+  </div>
+
+</div>
+<div class="" *ngIf='userProfile[0].scientist'>
+  <p>
+    scientist
+  </p>
+
+</div>
