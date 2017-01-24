@@ -1,11 +1,16 @@
 
 <div class="" *ngIf='userProfile[0].character == "student"'>
-<p>
-  Hello {{userProfile[0].name}}, as a {{userProfile[0].character}} of Japanese language and culture you've found yourself...
-</p>
+  <h5>Hello {{userProfile[0].name}}</h5>
+  <p>{{question.question}}</p>
+  <a (click)="goToNewRoute(question.route1)">{{question.option1}}</a>
+  <h6>Or</h6>
+  <a (click)="goToNewRoute(question.route2)">{{question.option2}}</a>
 </div>
+
 <div class="" *ngIf='userProfile[0].character == "fan"'>
-<p>
-  Hello {{userProfile[0].name}}, as a {{userProfile[0].character}} of Firefly you've found yourself...
-</p>
+  <h1>You chose the fan storyline it isn't finished yet!</h1>
+  <!-- <p>{{questions[3].question}}</p>
+  <a (click)="goToNewRoute()">{{questions[3].option1}}</a>
+  <h6>Or</h6>
+  <a routerLink="">{{questions[3].option1}}</a> -->
 </div>

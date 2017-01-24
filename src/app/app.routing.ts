@@ -5,6 +5,7 @@ import { OhayoconComponent } from './ohayocon/ohayocon.component';
 import { MadScientistComponent } from './mad-scientist/mad-scientist.component';
 import { CharacterComponent } from './character/character.component';
 import { Ohayocon1Component } from './ohayocon1/ohayocon1.component';
+import { QuestionDetailsComponent } from './question-details/question-details.component';
 
 const appRoutes: Routes = [
   {
@@ -20,8 +21,12 @@ const appRoutes: Routes = [
     component: OhayoconComponent
   },
   {
-    path: 'ohayocon/:character/1',
+    path: 'ohayocon/:character/:id',
     component: Ohayocon1Component
+  },
+  {
+    path: 'details/:id',
+    component: QuestionDetailsComponent
   },
 ];
 
